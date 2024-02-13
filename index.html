@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/media-queries.css">
+</head>
+
+<body>
+
+    <div class="logo-alura">
+        <img src="./assets/logo.png" alt="logo Alura">
+        <p class="texto__logo">Click aqui para reiniciar.</p>
+    </div>
+
+    <main class="conteudo__principal">
+        <section class="conteudo__principal__secao">
+            <div class="conteudo__principal__texto">
+                <textarea class="texto" placeholder="Digite seu texto" spellcheck="false" id="areaTexto" cols="40"
+                    rows="7"></textarea>
+            </div>
+            <div class="conteudo__principal__aviso">
+                <img src="./assets/Alerta.png" alt="ícone de alerta">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="conteudo__principal__botoes">
+                <button onclick="criptografa()" class="botao-criptografar" id="btnCriptografar" type="submit">Criptografar</button>
+                <button onclick="descriptografar()" class="botao-descriptografar" id="btnDescriptografar" type="submit">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="conteudo__principal__mensagens">
+            <div class="conteudo__principal__caixa">
+                <img src="./assets/Personagem.svg" alt="Personagem">
+                <div class="conteudo__principal__informacoes">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo__area-de-copia">
+            <div class="conteudo__principal__area-de-copia">
+                <textarea readonly="true" class="texto-destino"  spellcheck="false" id="areaCopia" cols="25" rows="9"></textarea>
+                <button class="botao-copiar" id="botaoCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
